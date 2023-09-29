@@ -65,15 +65,9 @@ body {
 
 #menu li a {
     text-decoration: none;
-    color: #ff4500;
+    color: #955d19;
     padding: 5px 15px;
     border-radius: 25px;
-}
-
-#menu li a:hover {
-    background-color: #74564c;
-    color: #fff;
-    text-decoration: underline;
 }
 
 
@@ -132,12 +126,7 @@ section {
 }
 
 #mail {
-    text-decoration: none;
     color: #000;
-}
-
-#mail:hover {
-    text-decoration: underline;
 }
 
 

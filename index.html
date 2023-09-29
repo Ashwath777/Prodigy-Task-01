@@ -12,10 +12,10 @@
         <img src="/images/logo.png" alt="logo" id="logo">
         
         <ul id="menu">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a onmouseover="hover(this)" onmouseout="noHover(this)" onclick="myHome(this)">Home</a></li>
+            <li><a onmouseover="hover(this)" onmouseout="noHover(this)" onclick="myAbout(this)">About</a></li>
+            <li><a onmouseover="hover(this)" onmouseout="noHover(this)" onclick="myServices(this)">Services</a></li>
+            <li><a onmouseover="hover(this)" onmouseout="noHover(this)" onclick="myContact(this)">Contact</a></li>
         </ul>
     </nav>
 
@@ -43,7 +43,7 @@
         <h1 class="heading">Get in touch</h1>
 
         <ul>
-            <li><a href="malito:abc123@gmail.com" id="mail">Send Email</a></li>
+            <li><a href="malito:abc123@gmail.com" id="mail" onmouseover="mailOver(this)" onmouseout="mailOut(this)">Send Email</a></li>
             <li><img src="/images/phone-solid.svg" alt="phone" height="15" style="margin-right: 5px;"> +45272582</li>
             <li><img src="/images/location-dot-solid.svg" alt="location" height="16" style="margin-right: 5px;">86 adgs, Gorakhpur, India</li>
         </ul>
@@ -52,5 +52,7 @@
     <footer>
         <p id="center">&copy; 2023 Gorakhpur India</p>
     </footer>
+
+    <script src="/script.js"></script>
 </body>
 </html>
