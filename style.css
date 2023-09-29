@@ -2,17 +2,15 @@
 
 
 * {
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
 }
 
 ::-webkit-scrollbar {
-    width: 15px;
+    width: 10px;
 }
 
 ::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 5px #000;
+    background: #03453a;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -25,6 +23,7 @@
 
 
 body {
+    margin: 0;
     width: 100%;
     height: 100%;
     background-color: #955d19;
@@ -45,9 +44,10 @@ body {
 }
 
 #logo {
-    height: 50px;
-    width: 50px;
+    height: 75px;
+    width: 75px;
     margin-right: 10px;
+    border-radius: 50px;
 }
 
 #menu {
@@ -70,9 +70,13 @@ body {
     border-radius: 25px;
 }
 
+.closebtn, .openbtn {
+    display: none;
+}
+
 
 section {
-    padding: 100px 0;
+    padding: 125px 0;
 }
 
 .para{
@@ -115,18 +119,27 @@ section {
     word-spacing: 5px;
 }
 
+
+/* contact */
 #contact {
     background-color: #74564c;
 }
 
+#contact ul {
+    display: flex;
+    justify-content: center;
+}
+
 #contact > ul > li {
-    margin: 15px 0;
-    text-align: center;
-    font-size: 20px;
+    margin: 0 50px;
+    list-style: none;
+    font-size: 25px;
+    color: #19312d;
 }
 
 #mail {
-    color: #000;
+    text-decoration: none;
+    color: #19312d;
 }
 
 
@@ -135,4 +148,92 @@ section {
     text-align: center;
     font-size: larger;
     margin: 1rem 0;
+}
+
+
+/* for mobile */
+@media screen and (max-width: 426px) {
+    body {
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .navbar {
+        background-color: transparent;
+        position: absolute;
+        flex-direction: column;
+    }
+
+    #logo {
+        margin-top: 2rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #menu {
+        margin: 0;
+        padding: 0;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(54, 56, 63, 0.9);
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        overflow-x: hidden;
+        transition: 0.5s;
+    }
+
+    #menu li {
+        margin: 20px;
+    }
+
+    #menu li a {
+        color: #1f0303 !important;
+        font-size: 30px;
+        text-decoration: underline;
+    }
+
+    .closebtn {
+        display: block;
+        position: absolute;
+        top: 15px;
+        right: 35px;
+        text-decoration: none;
+        color: #808080;
+        font-size: 35px;
+    }
+
+    .openbtn {
+        display: block;
+        position: fixed;
+        padding: 0 5px;
+        font-size: 25px;
+        top: 15px;
+    }
+
+    .para {
+        font-size: 15px;
+        text-align: justify;
+    }
+
+    .heading {
+        font-size: 35px;
+    }
+
+    #service {
+        word-spacing: normal;
+        text-align: justify;
+    }
+
+    #contact ul {
+        flex-direction: column;
+    }
+
+    #contact ul li {
+        margin: 10px 0;
+        font-size: 20px;
+    }
 }

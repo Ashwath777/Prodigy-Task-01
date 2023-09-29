@@ -35,3 +35,13 @@ function mailOut(x) {
     x.style.textDecoration = "none";
     x.style.color = "000";
 }
+
+
+// responsive
+function closeNav() {
+    document.getElementById("menu").style.width = "0%";
+}
+
+function openNav() {
+    document.getElementById("menu").style.width = "100%";
+}
