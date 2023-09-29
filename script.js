@@ -2,6 +2,7 @@ function hover(x) {
     x.style.color = "red";
     x.style.backgroundColor = "#74564c";
     x.style.textDecoration = "underline";
+    x.style.cursor = "pointer";
 }
 
 function noHover(x) {
